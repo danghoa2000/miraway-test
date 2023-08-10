@@ -2,6 +2,13 @@
     font-family: sans-serif;
 }
 
+.nav-link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #141416;
+}
+
 .blog {
     margin-bottom: 15px;
     &__image {
@@ -33,14 +40,14 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #777E90;
+        color: #777e90;
     }
-    
+
     &__author {
         font-weight: 500;
         font-size: 12px;
         line-height: 19px;
-        color: #B1B5C3;
+        color: #b1b5c3;
     }
 
     &.feature-blog {
@@ -63,14 +70,14 @@
 .more {
     text-decoration: none;
     padding: 16px 32px;
-    color: #0066E6;
+    color: #0066e6;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
 }
 
 .title {
-    color: #00295C;
+    color: #00295c;
     font-size: 44px;
     line-height: 52px;
     font-weight: 700;
@@ -81,12 +88,105 @@
     span {
         width: 40px;
         height: 40px;
-        border-width: 2px;
-        border-right-color: #fff;
+        border: 2px solid;
+        border-color: #fff;
         border-radius: 50%;
         overflow: hidden;
+        color: #777e90;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &.active {
-            border-color: #E6E8EC;
+            border-color: #e6e8ec;
         }
+    }
+}
+
+.title-with-icon {
+    display: flex;
+    align-items: center;
+    .icon-title {
+        margin-right: 10px;
+    }
+    .title {
+        margin: 0;
+    }
+}
+
+.title-small {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.news {
+    .new__item {
+        color: #0066e6;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.tags {
+    .tag__item {
+        border: 2px solid #e6e8ec;
+        padding: 12px 32px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+.card {
+    padding: 20px 15px;
+    .card-title {
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fcfcfd;
+    background-color: #0052b8;
+    padding: 15px 0;
+
+    .info {
+        display: flex;
+
+        .icon {
+            margin-right: 10px;
+        }
+    }
+    a.link {
+        margin-bottom: 1rem;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fcfcfd;
+        display: block;
+    }
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    a.link {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 12px;
+        border: 1px solid #fcfcfd;
     }
 }
